@@ -12,3 +12,6 @@ ionic cap add android
 ionic build
 # faz uma copia do build para a pasta android 
 ionic cap copy
+
+# token
+pk.eyJ1IjoiY2FpeGV0b3Zpc2siLCJhIjoiY2t3ZmwwMnUxMGZxbDJwbjBkanlxYW1ocyJ9.Ula-rQ-cmwkP__9uwVoOPQ 
