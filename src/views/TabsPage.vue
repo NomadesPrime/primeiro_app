@@ -9,8 +9,8 @@
         </ion-tab-button>
           
         <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon :icon="gameControllerOutline" />
-          <ion-label>Jogos</ion-label>
+          <ion-icon :icon="locate" />
+          <ion-label>Mapa</ion-label>
         </ion-tab-button>
         
         <ion-tab-button tab="tab3" href="/tabs/tab3">
@@ -31,7 +31,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { gameControllerOutline, camera, homeOutline, cafeOutline} from 'ionicons/icons';
+import { camera, homeOutline, cafeOutline, locate} from 'ionicons/icons';
 
 
 export default defineComponent({
@@ -39,7 +39,7 @@ export default defineComponent({
   components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
   setup() {          
     return {
-      gameControllerOutline, 
+      locate, 
       camera, 
       homeOutline,
       cafeOutline,

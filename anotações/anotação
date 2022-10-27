@@ -4,3 +4,11 @@ git commit -m "primeiro commit"
 git branch -M main
 git remote add origin https://github.com/NomadesPrime/primeiro_app.git
 git push -u origin main
+
+
+# adiciona o android ao projeto
+ionic cap add android
+# faz build do projeto
+ionic build
+# faz uma copia do build para a pasta android 
+ionic cap copy

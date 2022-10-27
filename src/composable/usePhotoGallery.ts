@@ -90,12 +90,24 @@ export function usePhotoGallery() {
         photos.value = photosInPreferences;
     };
 
+    const deletePhoto = async (photo: UserPhoto) =>{
+        photos.value = photos.value.filter((p) => p.filePath !== photo.filePath);
+        const filename = photo.filePath.substr(photo.filePath.lastIndexOf('/') + 1);
+        await Filesystem.deleteFile({
+            path: filename,
+            directory: Directory.Data,
+        });
+
+    };
+
     onMounted(loadSaved);
     watch(photos, cachePhotos);
 
     return {
         photos,
         takePhoto,
+        deletePhoto,
+    
     };
 
 }
